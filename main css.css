@@ -20,6 +20,8 @@ html {
     background-color: #111;
     color: white;
     padding: 10px 20px;
+    overflow-x: auto; /* Add this property */
+    white-space: nowrap; /* Add this property */
 }
 
 #navlist {
@@ -28,6 +30,8 @@ html {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 0; /* Add this property */
+    margin: 0; /* Add this property */
 }
 
 #navlist a {
@@ -35,7 +39,9 @@ html {
     color: white;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
+    padding: 10px; /* Add this property */
 }
+
 
 #navlist a:hover {
     background-color: #111;
