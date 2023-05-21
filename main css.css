@@ -1,1 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------Navbar Styling--------------------------*/
+
+#navbar{    
+    position: fixed;
+    z-index:999; /*layer precedence*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    
+}
+
+#navlist a:hover {
+    background-color: #111111;
+}
+
+#navlist a:active {
+    background-color: #fff;
+}
+
+
+.Navbar img{
+    height: 30px;
+    padding: 15px 50px 0 0;
+    margin-right: 400px;
+}
+
+#navlist {
+    width:50%;
+    list-style-type: none; 
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row; /* Specifies direction of flex items*/
+    justify-content: space-evenly; /* specifies the way content is distributed along main axis */
+    align-items: center;
+    height: 55px;
+    
+    
+}
+
+#navlist a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding:17px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+}
+
+/*--------------------------Header and Para tag Styling--------------------------*/
+h2 {
+    color: #4d4b4b; 
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 30pt; 
+    font-weight: normal; 
+    line-height: 55px;  
+    text-transform: uppercase; 
+    text-align: center; 
+    padding: 4% 0 4% 0;
+    mix-blend-mode: multiply;
+  
+}
+
+h3 {
+    color: #4d4b4b; 
+    font-family: 'Alata', sans-serif;
+    font-weight: 400; 
+    font-size: 25pt; 
+    font-weight: normal; 
+    line-height: 55px;  
+    text-transform: uppercase; 
+    text-align: start; 
+    padding: 5% 0 0 5%;
+    mix-blend-mode: multiply;
+  
+}
+
+h4 {
+    color: #4d4b4b; 
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 15pt; 
+    font-weight: normal; 
+    line-height: 45px;  
+    text-transform: uppercase; 
+    text-align: start; 
+    mix-blend-mode: multiply;
+  
+}
+
+p {
+    color: #4d4b4b; 
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 13pt; 
+    font-weight: thin; 
+    line-height: 30px;   
+    text-align: start; 
+    padding: 3% 0 0% 5%;
+    mix-blend-mode: multiply;
+    word-wrap: normal;
+    width: 90%;
+  
+}
+
+/*--------------------------landing page header background image--------------------------*/
+
+.headerGallery{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url("landing image.jpg");
+    background-size: 100%;
+    background-position: inherit;}
+
+.headerGallery text{
+    position:absolute;
+    color: white;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+    padding:50px;
+}
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: white !important;
+    margin-right:400px ;
+  }
+  
+  .text {
+    font-size: 40px;
+    width: fit-content;
+    margin-right:400px ;
+    color: white !important;
+    margin-left: 70px;
+    border: 2px solid white;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+
+/*--------------------------About Basketball container & its elements styling--------------------------*/
+.aboutBBContainer{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.aboutBBContainer .aboutBB{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width:100%;
+}
+
+.aboutBBContainer .aboutBB .imageBox{
+    display: flex;
+    width: 100%;
+}
+
+.aboutBBContainer .aboutBB .imageBox img{
+    max-width: 100%;
+    object-fit: cover;
+    width: 750px;
+    
+    /* object-position: 0px 15px; */
+}
+
+.aboutBBContainer .aboutBB .textBox{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    background-color: #e7e6e6;
+    
+}
+
+/*--------------------------Read More Action Button Styling--------------------------*/
+
+.aboutBBContainer .aboutBB .textBox .aboutBBbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    background-color: gray;
+    padding: 10px 10px;
+    font-size: 12pt;
+    margin: 7% 0 5% 5%;
+    
+}
+
+.aboutBBContainer .aboutBB .textBox .aboutBBbtn a{
+    font-family: 'Helvetica Neue', sans-serif;
+    text-decoration:none;
+    color: #fff;
+}
+
+/*--------------------------Button Styling--------------------------*/
+
+.bottombuttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0 2% 0;
+    width: 80%;
+}
+
+.centrbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightcornbtn{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.view{
+    text-align:center;
+    padding:8px;
+    margin-top: 5%;
+}
+
+.scrollup{
+    text-align:center;
+    padding:8px;
+    margin-top: 5%;
+}
+
+.view a{
+    text-decoration: none;
+    margin: 0 0 0 0;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.scrollup a{
+    text-decoration: none;
+    margin: 0 0 0 0;
+    padding:15px;
+    border:none;
+    background-color: gray;
+    color:white;
+    width: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+.view a:hover,
+.scrollup a:hover{
+   background-color:rgb(80, 80, 80);
+ }
+ 
+
+/*--------------------------Hall Of Fame container and elements styling--------------------------*/
+.subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 70px;
+  }
+  
+  .see-all-button {
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin-right: 70px;
+  }
+.containerClip{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 4% 0;
+}
+
+
+.containerClip .halloffamecontainer{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width:70%;
+}
+
+.halloffamecontainer .row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:4%;
+}
+
+.halloffamecontainer .row2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3% 0 0 0;
+    gap:4%;
+}
+
+.halloffamecontainer .row .column{
+    display:flex;
+    box-shadow: 5px 3px 23px rgba(0,0,0,0.25);
+}
+
+.halloffamecontainer .row .column img{
+    height: 250px;
+    object-fit: cover;
+    object-position: 0px -20px;
+    background-color: #fff;
+    /* border-radius: 100%; */
+}
+
+.halloffamecontainer .row2 .column{
+    display:flex;
+    box-shadow: 5px  3px 23px rgba(0,0,0,0.25);
+    margin-bottom: 100px;
+}
+
+.halloffamecontainer .row2 .column img{
+    height: 250px;
+    object-fit: cover;
+    /* object-position: 0px -20px; */
+    
+}
+.column {
+    position: relative;
+    float: left;
+    width: 25%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .column:hover .image-container img {
+    transform: scale(1.1);
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+  }
+  
+  .column:hover .image-text {
+    opacity: 1;
+  }
+
+/*--------------------------Hall Of Fame descriptor styling--------------------------*/
+
+.halloffamecontainer .hofTextrow{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    gap:4%;
+}
+
+.halloffamecontainer .hofTextrow .tagnstats{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width:200px;
+    /* background-color: #f0803f; */
+    padding: 0 0 2% 0;
+    /* border-bottom-right-radius: 5% 7%;
+    border-bottom-left-radius: 5% 7%; */
+    /* box-shadow: 5px 3px 23px rgba(0,0,0,0.25); */
+}
+
+.halloffamecontainer .hofTextrow .hofText{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    transition: transform 0.3s;
+    transform: translateY(100%);
+}
+
+.footer.show {
+    transform: translateY(0);
+}
+
+
+.footer .footer-container .footer-nav a{
+    color: white;
+}
 
